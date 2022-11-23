@@ -32,4 +32,4 @@ void loop(){
   lcd.print((smoke*100)/1000000);
   lcd.print(" %");
   delay(1000);
-}
+} 
