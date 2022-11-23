@@ -1,0 +1,17 @@
+Changes within co2snatcher.ino
+
+1st revision:
+  The libraries was not implemented using the right format in STM32cubeIDE, we make the changes when coding in Ardiuno Editor.
+
+2nd revision:
+  The dimensions of the LCD weren't coded correctly when we stated it. 
+  LiquidCrystal_I2C lcd(16, 2) --->  LiquidCrystal_I2C lcd(0x27, 16, 2)
+
+3rd revision:
+  Change the delay from 1 second (delay(100)) to 10 seconds (delay(1000)), so that the LCD displays the data for a longer period of time
+
+4th revision:
+  To make the data more precise, add "%" for the percentage of CO2 in the air and "PPML" as the unit displays on lcd. 
+
+5th revision:
+  Reformat the lcd display so there is no empty space.
