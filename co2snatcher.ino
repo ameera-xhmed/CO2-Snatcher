@@ -1,8 +1,8 @@
 #include <MQ2.h>
-  #include <Wire.h> 
-  #include <LiquidCrystal_I2C.h>
-  //I2C pins declaration
-  LiquidCrystal_I2C lcd(0x27, 16, 2);
+#include <Wire.h> 
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 int Analog_Input = A0;
 int lpg, co, smoke;
 
